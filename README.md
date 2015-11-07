@@ -24,7 +24,7 @@ Dentro del directorio del proyecto
 7.- Finalmente le hacemos Launch a la aplicacion.
 
 # Convención de servicios #
-Por defecto, para encontrar todos los films de un actor, se usa la url /actors/{id}/films/, siendo id el valor númerico del id del actor deseado. Mismo caso para los films, para hallar todos los actores de un film, se utiliza /films/{id}/actors/
+Por defecto, para encontrar todos los films de un actor, se usa la url /actors/{id}/films/, siendo id el valor númerico del id del actor deseado. Mismo caso para los films, para hallar todos los actores de un film, se utiliza /films/{id}/actors/. Para ver un actor en particular, se usa /actors/{id}, y /films/{id} para el caso de los films.
 
 # Creación de nuevas relaciones #
 Para crear una nueva relación entre un actor y un film, se utiliza el método POST en la url /filmActors. Se pasa como objeto json el id del actor, el id del film, y la fecha de edición. Así se asocia una actor con un film. El cambio queda presente en tiempo de ejecución y persistente en la base de datos.
